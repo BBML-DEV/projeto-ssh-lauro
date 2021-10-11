@@ -1,0 +1,180 @@
+/*zerando padding e margin padrão da página*/
+html, body{
+    padding: 0;
+    margin: 0;
+    background: url(../imagens/fundo.jpg) no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/*Configurando o header da página*/
+header{
+    background: #1D1B1E;
+    grid-area: header;
+}
+/*Configurando o main da página*/
+main{
+    grid-area: main;
+}
+
+/*Configurando o aside da página*/
+aside{
+    grid-area: aside;
+
+}
+
+/*Configurando o footer da página*/
+footer{
+    background-color:#C17C77;
+    grid-area: footer;
+}
+
+/*Configurando o container*/
+#container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "header header"
+                            "main aside"
+                            "footer footer"
+    ;
+}
+
+/*Configurando o menu de navegação*/
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #DEB4CA;
+}
+
+i{
+    font-size: 30px;
+}
+
+/*Formatando a parte de noticias*/
+.container-noticias{
+    width: 920px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.itens{
+    margin: 20px;
+    width: 320px;
+    background-color: #1D1B1E;
+    border: 2px solid white;
+}
+
+h3{
+ text-transform: uppercase;
+ color: white;
+ text-align: center;
+}
+
+
+h3:hover{
+    text-transform: uppercase;
+    color:#DEB4CA;
+ }
+
+ p{
+    padding: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ button{
+     background-color: #4B3051;
+     font-size: 15px;
+     text-transform: uppercase;
+     color: white;
+ }
+
+ button:hover{
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #1D1B1E;
+}
+
+/*Configurando o menu de navegação lateral*/
+.container-menu{
+   display: flex;
+    width: 320px;
+    margin: 20px auto;
+    background: #1D1B1E;
+    border: 2px solid white;
+}
+
+.itens-lateral{
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+label{
+    text-transform: uppercase;
+}
+
+.itens-lateral button{
+    margin: 10px;
+}
+
+/*Configurando a navegação do footer*/
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-footer{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-footer a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1D1B1E;
+ 
+}
+.nav-footer a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+i{
+    font-size: 30px;
+}
